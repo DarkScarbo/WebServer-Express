@@ -15,6 +15,10 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/about", (req, res) => {
+  res.render("about", {});
+});
+
 app.listen(3000, () => {
   console.log("Listen to port 3000");
 });
